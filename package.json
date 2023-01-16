@@ -1,0 +1,43 @@
+{
+  "name": "message-platform",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build-strict": "vue-tsc --noEmit && vite build",
+    "build": "vite build",
+    "build-stats": "cross-env VITE_BUILD=STATS vite build",
+    "build-test": "cross-env VITE_BUILD=TEST vite build",
+    "build-pre": "cross-env VITE_BUILD=PRE vite build",
+    "build-prod": "cross-env VITE_BUILD=PROD vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "ant-design-vue": "^3.2.10",
+    "axios": "^0.27.2",
+    "lodash-es": "^4.17.21",
+    "pinia": "^2.0.17",
+    "pinia-plugin-persist": "^1.0.0",
+    "portal-vue": "^3.0.0-beta.0",
+    "qs": "^6.11.0",
+    "vue": "^3.2.37",
+    "vue-router": "^4.1.3"
+  },
+  "devDependencies": {
+    "@types/lodash-es": "^4.17.6",
+    "@types/node": "^14.18.23",
+    "@types/qs": "^6.9.7",
+    "@vitejs/plugin-legacy": "^3.0.1",
+    "@vitejs/plugin-vue": "^3.0.0",
+    "cross-env": "^7.0.3",
+    "less": "^4.1.3",
+    "less-loader": "^11.0.0",
+    "rollup-plugin-visualizer": "^5.7.1",
+    "terser": "^5.16.1",
+    "typescript": "^4.6.4",
+    "unplugin-vue-components": "^0.22.4",
+    "vite": "^3.0.0",
+    "vue-tsc": "^0.38.4"
+  }
+}
